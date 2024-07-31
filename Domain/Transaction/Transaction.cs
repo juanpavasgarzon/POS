@@ -10,6 +10,6 @@ public record Transaction
     public required TransactionCustomer Customer { get; set; }
     public required TransactionCashRegister CashRegister { get; set; }
     public required List<TransactionItem> TransactionDetails { get; set; }
-    public required List<TransactionTax> Taxes { get; set; }
-    public required List<TransactionDiscount> Discounts { get; set; }
+    public List<TransactionTax> Taxes { get; set; } = [];
+    public List<TransactionDiscount> Discounts { get; set; } = [];
 }

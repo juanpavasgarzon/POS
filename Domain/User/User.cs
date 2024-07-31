@@ -9,6 +9,6 @@ public record User
     public required string FullName { get; set; }
     public required string Email { get; set; }
     public required string PhoneNumber { get; set; }
-    public required string Role { get; set; }
-    public bool Status { get; set; } = true;
+    public required UserRole Role { get; set; }
+    public bool IsActive { get; set; } = true;
 }
