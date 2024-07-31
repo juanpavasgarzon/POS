@@ -4,3 +4,9 @@
     build:
       context: .
       dockerfile: API/Dockerfile
+
+  workerservice:
+    image: workerservice
+    build:
+      context: .
+      dockerfile: WorkerService/Dockerfile
