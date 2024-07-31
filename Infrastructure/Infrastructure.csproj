@@ -7,16 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="CashRegister\" />
-      <Folder Include="Category\" />
-      <Folder Include="Customer\" />
-      <Folder Include="Discount\" />
-      <Folder Include="Inventory\" />
-      <Folder Include="Product\" />
-      <Folder Include="Supplier\" />
-      <Folder Include="Tax\" />
-      <Folder Include="Transaction\" />
-      <Folder Include="User\" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
 
 </Project>
