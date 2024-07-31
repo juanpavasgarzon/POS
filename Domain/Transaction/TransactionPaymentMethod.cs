@@ -1,6 +1,6 @@
 namespace Domain.Transaction;
 
-public enum PaymentMethod
+public enum TransactionPaymentMethod
 {
     Cash,
     CreditCard,
