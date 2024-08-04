@@ -1,6 +1,8 @@
+using Common.Entity;
+
 namespace Domain.Role;
 
-public record Role
+public record Role : BaseEntity
 {
     public required string Name { get; set; }
     public string? Description { get; set; }

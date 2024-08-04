@@ -1,9 +1,10 @@
+using Common.Entity;
+
 namespace Domain.CashRegister;
 
-public record CashRegister
+public record CashRegister : BaseEntity
 {
-    public required string Id { get; set; }
-    public required string Name { get; set; }
+    public required string Code { get; set; }
     public required string Location { get; set; }
     public required string CurrentBalance { get; set; }
     public bool IsActive { get; set; } = true;

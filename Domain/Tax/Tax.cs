@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.Tax;
 
-public record Tax
+public record Tax : BaseEntity
 {
-    public required string Id { get; set; }
     public required string Name { get; set; }
     public required decimal Rate { get; set; }
 }

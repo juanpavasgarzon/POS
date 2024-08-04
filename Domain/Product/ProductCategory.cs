@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.Product;
 
-public record ProductCategory
+public record ProductCategory : BaseEntity
 {
-    public required string Id { get; set; }
     public required string Name { get; set; }
     public string? Description { get; set; }
 }

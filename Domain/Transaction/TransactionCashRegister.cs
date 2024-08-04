@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.Transaction;
 
-public record TransactionCashRegister
+public record TransactionCashRegister : BaseEntity
 {
-    public required string Id { get; set; }
-    public required string Name { get; set; }
+    public required string Code { get; set; }
     public required string Location { get; set; }
 }

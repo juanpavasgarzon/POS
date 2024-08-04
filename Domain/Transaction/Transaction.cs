@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.Transaction;
 
-public record Transaction
+public record Transaction : BaseEntity
 {
-    public required string Id { get; set; }
     public required DateTime TransactionDate { get; set; }
     public required decimal TotalAmount { get; set; }
     public required TransactionPaymentMethod TransactionPaymentMethod { get; set; }

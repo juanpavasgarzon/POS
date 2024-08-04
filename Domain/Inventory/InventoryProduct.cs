@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.Inventory;
 
-public record InventoryProduct
+public record InventoryProduct : BaseEntity
 {
-    public required string Id { get; set; }
     public required string Code { get; set; }
     public required string Name { get; set; }
     public required string Description { get; set; }

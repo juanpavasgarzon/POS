@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.Supplier;
 
-public record Supplier
+public record Supplier : BaseEntity
 {
-    public required string Id { get; set; }
     public required string Identifier { get; set; }
     public required string Name { get; set; }
     public required string ContactName { get; set; }

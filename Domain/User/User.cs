@@ -1,8 +1,9 @@
+using Common.Entity;
+
 namespace Domain.User;
 
-public record User
+public record User : BaseEntity
 {
-    public required string Id { get; set; }
     public required string Identifier { get; set; }
     public required string Username { get; set; }
     public required string Password { get; set; }
